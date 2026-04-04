@@ -80,7 +80,7 @@ if ($char -match '^[Qq]$') {"`n"; return}
 elseif ($char -match '^\d$') {$inputBuffer += $char}
 else {$inputBuffer = ""}}}}}
 
-function recycle {# Public module to mimic most features of the Remove-Item cmdlet, but with safe, Recycle Bin support.
+function recycle {# A public module to mimic most features of the Remove-Item cmdlet, but with safe, Recycle Bin support.
 
 # Act like a cmdlet, with -whatif and -confirm support, and user confirmation dependent on user settings.
 [CmdletBinding(SupportsShouldProcess=$true, ConfirmImpact='Medium')]
